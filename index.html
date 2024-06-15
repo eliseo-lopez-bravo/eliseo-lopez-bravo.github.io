@@ -26,6 +26,10 @@
             align-items: center;
         }
 
+        .bold-text {
+            font-weight: bold;
+        }
+
         .project {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -178,9 +182,14 @@
                         </p>
 
                         <p class="text-gray-600"><b>Commands: </b></p>
-                        <li>terraform init (Initialize the Terraform project)</li>
-                        <li>terraform apply (Apply the configuration and start the Docker container)</li>
-                        <li>terraform destroy (Destroy the resources created by Terraform)</li>
+                        <li><span class="bold-text">terraform init</span> (Initialize the Terraform project)</li>
+                        <li><span class="bold-text">terraform plan</span> (Plan and preview of changes to the Terraform
+                            project)
+                        </li>
+                        <li><span class="bold-text">terraform apply</span> (Apply the configuration and start the Docker
+                            container)</li>
+                        <li><span class="bold-text">terraform destroy</span> (Destroy the resources created by
+                            Terraform)</li>
                         </p>
                         <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8000
                             using Infrastructure as Code principles.</p>
@@ -255,10 +264,12 @@
                         </p>
 
                         <p class="text-gray-600"><b>Commands: </b></p>
-                        <li>terraform init (Initialize the Terraform project)</li>
+                        <li><span class="bold-text">terraform init</span> (Initialize the Terraform project)</li>
+                        <li>terraform plan (Preview of changes to the Terraform project)</li>
                         <li>terraform apply (Apply the configuration and start the Docker container)</li>
                         <li>terraform destroy (Destroy the resources created by Terraform)</li>
                         </p>
+
                         <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8000
                             using Infrastructure as Code principles.</p>
 
