@@ -25,6 +25,22 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        .project {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project-details {
+            display: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project-details p {
+            margin-bottom: 10px;
+            /* Add bottom margin to each paragraph */
+        }
     </style>
 </head>
 
@@ -70,9 +86,9 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="bg-gray-200  py-20">
+    <section id="experience" class="bg-gray-200 p-8">
         <div class="container mx-auto">
-            <h2 class="text-3xl text-gray-700  font-bold mb-8">Work Experience</h2>
+            <h1 class="text-3xl text-gray-700  font-bold mb-8">Work Experience</h1>
 
             <!-- Job 1 -->
             <div class="mb-6">
@@ -114,7 +130,7 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-300 py-20">
+    <section id="skills" class="bg-gray-300 p-8">
         <div class="container mx-auto">
             <h2 class="text-3xl text-gray-700 font-bold mb-8">Skills</h2>
 
@@ -141,35 +157,125 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-gray-200 py-20">
+    <section id="projects" class="bg-gray-200 p-8">
         <div class="container mx-auto">
-            <h2 class="text-3xl text-gray-700 font-bold mb-8">Projects</h2>
+            <h2>
+                <span class="text-3xl text-gray-700 font-bold mb-8">Projects</span>
+                <span class="small-text">(Click each project name for more information)</span>
+            </h2>
 
-            <!-- Project 1 -->
-            <div class="mb-6">
-                <h3 class="text-xl font-bold">Docker/Kubernetes</h3>
-                <p class="text-gray-600">: </p>
-                <p class="text-gray-700"></p>
+            <div class="container">
+                <!-- Project 1 -->
+                <div class="project" onclick="toggleDetails('details1')">
+                    <h3 class="text-xl font-bold"><b class="text-blue-900">IaC Terraform Docker Nginx Demo </b> </h3>
+                    <div id="details1" class="project-details">
+                        <p class="text-gray-600"><b>Description: </b>This project demonstrates how to use Terraform to
+                            provision and manage Docker containers. In this example, I use Terraform to pull the latest
+                            Nginx image from Docker Hub and run a container on port 8000. </p>
+
+                        <p class="text-gray-600"><b>Key Files: </b></p>
+                        <li>main.tf (Contains the Terraform configuration)</li>
+                        </p>
+
+                        <p class="text-gray-600"><b>Commands: </b></p>
+                        <li>terraform init (Initialize the Terraform project)</li>
+                        <li>terraform apply (Apply the configuration and start the Docker container)</li>
+                        <li>terraform destroy (Destroy the resources created by Terraform)</li>
+                        </p>
+                        <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8000
+                            using Infrastructure as Code principles.</p>
+
+                        <p class="text-gray-600"><b>Screenshots: </b></p>
+                        <li>Screenshot #1</li>
+                        <li>Screenshot #2</li>
+
+                        <p class="text-gray-700"></p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project" onclick="toggleDetails('details2')">
+                    <h3 class="text-xl font-bold"><b class="text-blue-900">Terraform/Ansible: IaC</b> </h3>
+                    <div id="details2" class="project-details">
+                        <p class="text-gray-600"><b>Description: </b>Details about Terraform/Ansible: IaC:</p>
+
+                        <p class="text-gray-600"><b>Key Files: </b></p>
+                        <li>main.tf (Contains the Terraform configuration)</li>
+                        </p>
+
+                        <p class="text-gray-600"><b>Commands: </b></p>
+                        <li>terraform init (Initialize the Terraform project)</li>
+                        <li>terraform apply (Apply the configuration and start the Docker container)</li>
+                        <li>terraform destroy (Destroy the resources created by Terraform)</li>
+                        </p>
+                        <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8080
+                            using Infrastructure as Code principles.</p>
+
+                        <p class="text-gray-600"><b>Screenshots: </b></p>
+                        <li>Screenshot #1</li>
+                        <li>Screenshot #2</li>
+
+                        <p class="text-gray-700"></p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project" onclick="toggleDetails('details3')">
+                    <h3 class="text-xl font-bold"><b class="text-blue-900">Salesforce CI/CD </b> </h3>
+                    <div id="details3" class="project-details">
+                        <p class="text-gray-600"><b>Description: </b>Details about Salesforce CI/CD:</p>
+
+                        <p class="text-gray-600"><b>Key Files: </b></p>
+                        <li>main.tf (Contains the Terraform configuration)</li>
+                        </p>
+
+                        <p class="text-gray-600"><b>Commands: </b></p>
+                        <li>terraform init (Initialize the Terraform project)</li>
+                        <li>terraform apply (Apply the configuration and start the Docker container)</li>
+                        <li>terraform destroy (Destroy the resources created by Terraform)</li>
+                        </p>
+                        <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8080
+                            using Infrastructure as Code principles.</p>
+
+                        <p class="text-gray-600"><b>Screenshots: </b></p>
+                        <li>Screenshot #1</li>
+                        <li>Screenshot #2</li>
+
+                        <p class="text-gray-700"></p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project" onclick="toggleDetails('details4')">
+                    <h3 class="text-xl font-bold"><b class="text-blue-900">xcxc </b> </h3>
+                    <div id="details4" class="project-details">
+                        <p class="text-gray-600"><b>Description: </b>Details about xcxc: </p>
+
+                        <p class="text-gray-600"><b>Key Files: </b></p>
+                        <li>main.tf (Contains the Terraform configuration)</li>
+                        </p>
+
+                        <p class="text-gray-600"><b>Commands: </b></p>
+                        <li>terraform init (Initialize the Terraform project)</li>
+                        <li>terraform apply (Apply the configuration and start the Docker container)</li>
+                        <li>terraform destroy (Destroy the resources created by Terraform)</li>
+                        </p>
+                        <p class="text-gray-600"><b>Outcome: </b>Successfully running Nginx on http://localhost:8000
+                            using Infrastructure as Code principles.</p>
+
+                        <p class="text-gray-600"><b>Screenshots: </b></p>
+                        <li>Screenshot #1</li>
+                        <li>Screenshot #2</li>
+
+                        <p class="text-gray-700"></p>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Project 2 -->
-            <div class="mb-6">
-                <h3 class="text-xl font-bold">Terraform/Ansible: IaC</h3>
-                <p class="text-gray-600">: </p>
-                <p class="text-gray-700"></p>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="mb-6">
-                <h3 class="text-xl font-bold">Salesforce CI/CD</h3>
-                <p class="text-gray-600">: </p>
-                <p class="text-gray-700"></p>
-            </div>
-        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-300 py-20">
+    <section id="contact" class="bg-gray-300 p-8">
         <div class="container mx-auto flex justify-between">
             <div style="padding: 10px;border: 2px solid #fff;background: rgba(255, 255, 255, 0.2);border-radius: 10px;"
                 class="container mx-auto">
@@ -224,6 +330,20 @@
     <!-- <link href="/path/to/your/tailwind.css" rel="stylesheet"> 
     <!-- <script src="/path/to/your/tailwind.js"></script> -->
 
+    <script>
+        function toggleDetails(id) {
+            const allDetails = document.querySelectorAll('.project-details');
+            allDetails.forEach(detail => {
+                if (detail.id === id) {
+                    if (!event.target.closest('.project-details')) { // Check if the click is not within details
+                        detail.style.display = detail.style.display === 'none' || detail.style.display === '' ? 'block' : 'none';
+                    }
+                } else {
+                    detail.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
